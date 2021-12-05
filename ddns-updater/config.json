@@ -1,0 +1,35 @@
+{
+  "settings": [
+    {
+      "provider": "xoogle",
+      "domain": "domain.ca",
+      "host": "abc",
+      "username": "12345678",
+      "password": "87654321",
+      "ip_version": "ipv4" 
+    },
+    {
+      "provider": "foogle",
+      "domain": "domain.net",
+      "host": "def",
+      "username": "12345678",
+      "password": "87654321",
+      "ip_version": "ipv4" 
+    },
+    {
+      "provider": "hoogle",
+      "domain": "domain.org",
+      "host": "ghi",
+      "username": "12345678",
+      "password": "87654321",
+      "ip_version": "ipv4" 
+    },
+  ]
+}
+
+
+
+
+
+
+

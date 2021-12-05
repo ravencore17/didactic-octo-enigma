@@ -1,0 +1,21 @@
+version: '3.7'
+
+networks:
+  frontend:
+    external: true
+
+services:
+  app:
+    image: qmcgaw/ddns-updater:latest
+    container_name: ddns-updater-app
+    restart: always
+    environment:
+      - PERIOD=10m
+      - UPDATE_COOLDOWN_PERIOD=10m
+      - HTTP_TIMEOUT=30s
+      - LISTENING_PORT=8000
+      - TZ=America/Edmonton
+    volumes:
+      - /you/path/ddns-updater/data:/updater/data
+    networks:
+      - frontend
